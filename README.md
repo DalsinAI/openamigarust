@@ -13,8 +13,9 @@ Rust for the Amiga: programs written in Rust that run on AmigaOS 3.x on a
   optimisation level.
 - **Programs load through elf.library.** Rust builds a 68k ELF, and
   [elf.library](https://github.com/DalsinAI/amigachrome-guest/tree/main/libraries/openelf)
-  loads it from the Shell. elf.library's `rust/hello` runs on AmigaOS today,
-  with `core` and `alloc` on an exec memory pool.
+  loads it from the Shell. elf.library's `rust/hello` (`core` and `alloc` on an
+  exec memory pool) has not been run on an Amiga yet; its fixture runs under
+  qemu in elf.library's tests.
 - **Not yet:** an AmigaOS target, the OS's libraries as Rust crates, and
   `std`. See [docs/PLAN.md](docs/PLAN.md).
 
